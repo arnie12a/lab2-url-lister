@@ -1,0 +1,107 @@
+Two workers
+
+student-04-f468296624ab@test-dataproc-m:~/lab2-url-lister$ time make run
+rm -rf output
+hadoop jar UrlCount.jar UrlCount input output
+2026-09-03 03:13:41,978 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-2b977eebd3b7.internal./10.164.0.4:8032
+2026-09-03 03:13:42,424 INFO client.AHSProxy: Connecting to Application History server at test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-2b977eebd3b7.internal./10.164.0.4:10200
+2026-09-03 03:13:42,896 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2026-09-03 03:13:42,915 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/student-04-f468296624ab/.staging/job_1788404694929_0001
+2026-09-03 03:13:43,633 INFO input.FileInputFormat: Total input files to process : 2
+2026-09-03 03:13:43,809 INFO mapreduce.JobSubmitter: number of splits:2
+2026-09-03 03:13:44,327 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1788404694929_0001
+2026-09-03 03:13:44,327 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-09-03 03:13:44,706 INFO conf.Configuration: resource-types.xml not found
+2026-09-03 03:13:44,707 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-09-03 03:13:45,293 INFO impl.YarnClientImpl: Submitted application application_1788404694929_0001
+2026-09-03 03:13:45,373 INFO mapreduce.Job: The url to track the job: http://test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-2b977eebd3b7.internal.:8088/proxy/application_1788404694929_0001/
+2026-09-03 03:13:45,377 INFO mapreduce.Job: Running job: job_1788404694929_0001
+2026-09-03 03:13:59,828 INFO mapreduce.Job: Job job_1788404694929_0001 running in uber mode : false
+2026-09-03 03:13:59,829 INFO mapreduce.Job:  map 0% reduce 0%
+2026-09-03 03:14:13,990 INFO mapreduce.Job:  map 100% reduce 0%
+2026-09-03 03:14:22,048 INFO mapreduce.Job:  map 100% reduce 33%
+2026-09-03 03:14:25,071 INFO mapreduce.Job:  map 100% reduce 67%
+2026-09-03 03:14:26,093 INFO mapreduce.Job:  map 100% reduce 100%
+2026-09-03 03:14:27,112 INFO mapreduce.Job: Job job_1788404694929_0001 completed successfully
+2026-09-03 03:14:27,242 INFO mapreduce.Job: Counters: 55
+        File System Counters
+                FILE: Number of bytes read=111199
+                FILE: Number of bytes written=1661842
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=822256
+                HDFS: Number of bytes written=402
+                HDFS: Number of read operations=21
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=9
+                HDFS: Number of bytes read erasure-coded=0
+        Job Counters 
+                Killed map tasks=1
+                Launched map tasks=2
+                Launched reduce tasks=3
+                Data-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=72418423
+                Total time spent by all reduces in occupied slots (ms)=71310797
+                Total time spent by all map tasks (ms)=22099
+                Total time spent by all reduce tasks (ms)=21761
+                Total vcore-milliseconds taken by all map tasks=22099
+                Total vcore-milliseconds taken by all reduce tasks=21761
+                Total megabyte-milliseconds taken by all map tasks=72418423
+                Total megabyte-milliseconds taken by all reduce tasks=71310797
+        Map-Reduce Framework
+                Map input records=3936
+                Map output records=2457
+                Map output bytes=121748
+                Map output materialized bytes=111217
+                Input split bytes=258
+                Combine input records=2457
+                Combine output records=2106
+                Reduce input groups=1973
+                Reduce shuffle bytes=111217
+                Reduce input records=2106
+                Reduce output records=10
+                Spilled Records=4212
+                Shuffled Maps =6
+                Failed Shuffles=0
+                Merged Map outputs=6
+                GC time elapsed (ms)=202
+                CPU time spent (ms)=3990
+                Physical memory (bytes) snapshot=2077384704
+                Virtual memory (bytes) snapshot=23571521536
+                Total committed heap usage (bytes)=1723858944
+                Peak Map Physical memory (bytes)=553193472
+                Peak Map Virtual memory (bytes)=4711268352
+                Peak Reduce Physical memory (bytes)=349831168
+                Peak Reduce Virtual memory (bytes)=4722413568
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=821998
+        File Output Format Counters 
+                Bytes Written=402
+
+real    0m52.126s
+user    0m14.313s
+sys     0m0.802s
+
+
+
+
+OUTPUT
+#	18
+https://en.wikipedia.org/wiki/Doi_(identifier)	18
+https://en.wikipedia.org/wiki/Google_File_System	6
+https://en.wikipedia.org/wiki/ISBN_(identifier)	18
+https://en.wikipedia.org/wiki/MapReduce	6
+https://en.wikipedia.org/wiki/S2CID_(identifier)	14
+mw-data:TemplateStyles:r1295599781	33
+mw-data:TemplateStyles:r1333133064	7
+mw-data:TemplateStyles:r1333433106	121
+mw-data:TemplateStyles:r886049734	12
+
