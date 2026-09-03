@@ -88,15 +88,11 @@ hadoop jar UrlCount.jar UrlCount /user/student-04-fef8d39336fe/input /user/stude
                 Bytes Written=402
 
 
-1st iteration
 real    1m22.000s
 user    0m22.424s
 sys     0m1.300s
 
-2nd iteration
-real    1m11.006s
-user    0m22.451s
-sys     0m1.293s
+
 
 
 #       18
