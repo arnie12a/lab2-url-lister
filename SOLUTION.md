@@ -37,7 +37,7 @@ List the software/tools needed to run your solution:
 - Number of workers tested: 2 & 4
 
 ## Collaboration
-I worked alone on this assignment along with Copilot.
+I worked alone on this assignment along with Copilot to help me work in the Google Cloud Platform.
 
 ## Sample Output
 #### 2 & 4 workers both rendered the same output
