@@ -1,29 +1,28 @@
 student-04-fef8d39336fe@test-dataproc-m:~/lab2-url-lister$ time make run
 hdfs dfs -rm -r /user/student-04-fef8d39336fe/output || true
-rm: `/user/student-04-fef8d39336fe/output': No such file or directory
+Deleted /user/student-04-fef8d39336fe/output
 hadoop jar UrlCount.jar UrlCount /user/student-04-fef8d39336fe/input /user/student-04-fef8d39336fe/output
-2026-09-03 03:49:27,057 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-ce893d56691a.internal./10.164.0.2:8032
-2026-09-03 03:49:27,399 INFO client.AHSProxy: Connecting to Application History server at test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-ce893d56691a.internal./10.164.0.2:10200
-2026-09-03 03:49:27,808 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
-2026-09-03 03:49:27,822 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/student-04-fef8d39336fe/.staging/job_1788406811519_0001
-2026-09-03 03:49:28,558 INFO input.FileInputFormat: Total input files to process : 2
-2026-09-03 03:49:28,749 INFO mapreduce.JobSubmitter: number of splits:2
-2026-09-03 03:49:29,275 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1788406811519_0001
-2026-09-03 03:49:29,275 INFO mapreduce.JobSubmitter: Executing with tokens: []
-2026-09-03 03:49:29,653 INFO conf.Configuration: resource-types.xml not found
-2026-09-03 03:49:29,654 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
-2026-09-03 03:49:30,247 INFO impl.YarnClientImpl: Submitted application application_1788406811519_0001
-2026-09-03 03:49:30,340 INFO mapreduce.Job: The url to track the job: http://test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-ce893d56691a.internal.:8088/proxy/application_1788406811519_0001/
-2026-09-03 03:49:30,341 INFO mapreduce.Job: Running job: job_1788406811519_0001
-2026-09-03 03:49:49,753 INFO mapreduce.Job: Job job_1788406811519_0001 running in uber mode : false
-2026-09-03 03:49:49,754 INFO mapreduce.Job:  map 0% reduce 0%
-2026-09-03 03:50:10,996 INFO mapreduce.Job:  map 50% reduce 0%
-2026-09-03 03:50:12,004 INFO mapreduce.Job:  map 100% reduce 0%
-2026-09-03 03:50:22,075 INFO mapreduce.Job:  map 100% reduce 33%
-2026-09-03 03:50:28,117 INFO mapreduce.Job:  map 100% reduce 67%
-2026-09-03 03:50:30,129 INFO mapreduce.Job:  map 100% reduce 100%
-2026-09-03 03:50:31,149 INFO mapreduce.Job: Job job_1788406811519_0001 completed successfully
-2026-09-03 03:50:31,289 INFO mapreduce.Job: Counters: 55
+2026-09-03 04:05:24,831 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-ce893d56691a.internal./10.164.0.2:8032
+2026-09-03 04:05:25,135 INFO client.AHSProxy: Connecting to Application History server at test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-ce893d56691a.internal./10.164.0.2:10200
+2026-09-03 04:05:25,453 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2026-09-03 04:05:25,483 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/student-04-fef8d39336fe/.staging/job_1788406811519_0003
+2026-09-03 04:05:26,144 INFO input.FileInputFormat: Total input files to process : 2
+2026-09-03 04:05:26,268 INFO mapreduce.JobSubmitter: number of splits:2
+2026-09-03 04:05:26,669 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1788406811519_0003
+2026-09-03 04:05:26,670 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-09-03 04:05:27,038 INFO conf.Configuration: resource-types.xml not found
+2026-09-03 04:05:27,038 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-09-03 04:05:27,187 INFO impl.YarnClientImpl: Submitted application application_1788406811519_0003
+2026-09-03 04:05:27,392 INFO mapreduce.Job: The url to track the job: http://test-dataproc-m.europe-west4-a.c.qwiklabs-gcp-01-ce893d56691a.internal.:8088/proxy/application_1788406811519_0003/
+2026-09-03 04:05:27,394 INFO mapreduce.Job: Running job: job_1788406811519_0003
+2026-09-03 04:05:41,656 INFO mapreduce.Job: Job job_1788406811519_0003 running in uber mode : false
+2026-09-03 04:05:41,658 INFO mapreduce.Job:  map 0% reduce 0%
+2026-09-03 04:05:59,829 INFO mapreduce.Job:  map 100% reduce 0%
+2026-09-03 04:06:10,910 INFO mapreduce.Job:  map 100% reduce 33%
+2026-09-03 04:06:16,952 INFO mapreduce.Job:  map 100% reduce 67%
+2026-09-03 04:06:17,962 INFO mapreduce.Job:  map 100% reduce 100%
+2026-09-03 04:06:19,993 INFO mapreduce.Job: Job job_1788406811519_0003 completed successfully
+2026-09-03 04:06:20,121 INFO mapreduce.Job: Counters: 55
         File System Counters
                 FILE: Number of bytes read=111199
                 FILE: Number of bytes written=1661842
@@ -41,14 +40,14 @@ hadoop jar UrlCount.jar UrlCount /user/student-04-fef8d39336fe/input /user/stude
                 Launched map tasks=2
                 Launched reduce tasks=3
                 Data-local map tasks=2
-                Total time spent by all maps in occupied slots (ms)=119266415
-                Total time spent by all reduces in occupied slots (ms)=119826782
-                Total time spent by all map tasks (ms)=36395
-                Total time spent by all reduce tasks (ms)=36566
-                Total vcore-milliseconds taken by all map tasks=36395
-                Total vcore-milliseconds taken by all reduce tasks=36566
-                Total megabyte-milliseconds taken by all map tasks=119266415
-                Total megabyte-milliseconds taken by all reduce tasks=119826782
+                Total time spent by all maps in occupied slots (ms)=103674449
+                Total time spent by all reduces in occupied slots (ms)=117837643
+                Total time spent by all map tasks (ms)=31637
+                Total time spent by all reduce tasks (ms)=35959
+                Total vcore-milliseconds taken by all map tasks=31637
+                Total vcore-milliseconds taken by all reduce tasks=35959
+                Total megabyte-milliseconds taken by all map tasks=103674449
+                Total megabyte-milliseconds taken by all reduce tasks=117837643
         Map-Reduce Framework
                 Map input records=3936
                 Map output records=2457
@@ -65,15 +64,15 @@ hadoop jar UrlCount.jar UrlCount /user/student-04-fef8d39336fe/input /user/stude
                 Shuffled Maps =6
                 Failed Shuffles=0
                 Merged Map outputs=6
-                GC time elapsed (ms)=381
-                CPU time spent (ms)=6690
-                Physical memory (bytes) snapshot=2189103104
-                Virtual memory (bytes) snapshot=23580254208
-                Total committed heap usage (bytes)=1843396608
-                Peak Map Physical memory (bytes)=587501568
-                Peak Map Virtual memory (bytes)=4710502400
-                Peak Reduce Physical memory (bytes)=356986880
-                Peak Reduce Virtual memory (bytes)=4722765824
+                GC time elapsed (ms)=349
+                CPU time spent (ms)=6920
+                Physical memory (bytes) snapshot=2197696512
+                Virtual memory (bytes) snapshot=23575244800
+                Total committed heap usage (bytes)=1905262592
+                Peak Map Physical memory (bytes)=579235840
+                Peak Map Virtual memory (bytes)=4711301120
+                Peak Reduce Physical memory (bytes)=376078336
+                Peak Reduce Virtual memory (bytes)=4724056064
         Shuffle Errors
                 BAD_ID=0
                 CONNECTION=0
@@ -86,6 +85,20 @@ hadoop jar UrlCount.jar UrlCount /user/student-04-fef8d39336fe/input /user/stude
         File Output Format Counters 
                 Bytes Written=402
 
-real    1m15.983s
-user    0m22.991s
-sys     0m1.508s
+real    1m6.563s
+user    0m21.358s
+sys     0m1.654s
+
+
+
+#       18
+https://en.wikipedia.org/wiki/Doi_(identifier)  18
+https://en.wikipedia.org/wiki/Google_File_System        6
+https://en.wikipedia.org/wiki/ISBN_(identifier) 18
+https://en.wikipedia.org/wiki/MapReduce 6
+https://en.wikipedia.org/wiki/S2CID_(identifier)        14
+mw-data:TemplateStyles:r1295599781      33
+mw-data:TemplateStyles:r1333133064      7
+mw-data:TemplateStyles:r1333433106      121
+mw-data:TemplateStyles:r886049734       12
+
