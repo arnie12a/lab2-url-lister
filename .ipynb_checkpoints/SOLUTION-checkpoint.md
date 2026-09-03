@@ -55,12 +55,11 @@ I worked alone on this assignment along with Copilot to help me work in the Goog
 | `mw-data:TemplateStyles:r886049734` | 12 |
 
 
-## Execution Time Comparison
-2 workers:               4 workers: 
-real    1m6.563s         real    1m22.000s
-user    0m21.358s        user    0m22.424s
-sys     0m1.654s         sys     0m1.300s
-
+| Metric | 2 Workers | 4 Workers |
+|---|---:|---:|
+| **Real Time** | 1m 6.563s | 1m 22.000s |
+| **User Time** | 0m 21.358s | 0m 22.424s |
+| **System Time** | 0m 1.654s | 0m 1.300s |
 
 
 ## Discussion
