@@ -41,6 +41,7 @@ I worked alone on this assignment along with Copilot.
 
 ## Sample Output
 #### 2 & 4 workers both rendered the same output
+---
        18
 https://en.wikipedia.org/wiki/Doi_(identifier)  18
 https://en.wikipedia.org/wiki/Google_File_System        6
@@ -52,6 +53,7 @@ mw-data:TemplateStyles:r1333133064      7
 mw-data:TemplateStyles:r1333433106      121
 mw-data:TemplateStyles:r886049734       12
 
+---
 
 ## Execution Time Comparison
 2 workers:               4 workers: 
